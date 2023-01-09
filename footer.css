@@ -1,0 +1,82 @@
+footer {
+  overflow-x: hidden;
+}
+.footer__item {
+  display: flex;
+  padding-inline: 7rem;
+  gap: 30%;
+  background-color: var(--clr-verydarkcyan);
+  color: whitesmoke;
+  margin-top: 10rem;
+  position: relative;
+  border-block: 1rem solid var(--clr-verydarkcyan);
+  padding: 5rem;
+}
+@media (max-width: 950px) {
+    .footer__item {
+      flex-direction: column-reverse;
+      gap: 5rem;
+    }
+  }
+.footer__item::before {
+  content: url(./images/bg-footer-top-desktop.svg);
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+}
+@media (max-width:650px){
+    .footer__item::before{
+        left: -75%;
+    }
+}
+.footer__item > .leftpart > div {
+  display: flex;
+  margin-block: 1rem;
+  gap: 1rem;
+}
+.footer__item > .leftpart > div>img{
+  height: 1.5rem;
+}
+.footer__item > .leftpart > p {
+  margin-block: 1.5rem;
+}
+.footer__item > .rightpart {
+  width: 60%;
+}
+.footer__item > .rightpart > h3 {
+  font-size: 150%;
+}
+@media (max-width: 950px) {
+    .footer__item > .rightpart > h3 {
+      font-size: 120%;
+      gap: 5rem;
+    }
+  }
+.footer__item > .rightpart > P {
+  margin-block: 2rem;
+}
+.footer__item > .rightpart > div{
+    display: flex;
+    width: 130%;
+    gap: 1rem;
+    flex-wrap:wrap;
+}
+.footer__item > .rightpart > div > button {
+  border: none;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-pink);
+  color: whitesmoke;
+  font-weight: bold;
+}
+.footer__item > .rightpart > div > button:hover {
+  cursor: pointer;
+  background-color: var(--clr-lighpink);
+}
+.footer__item > .rightpart > div > input {
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
