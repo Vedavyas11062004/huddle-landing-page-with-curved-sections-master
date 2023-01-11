@@ -13,32 +13,33 @@ footer {
   padding: 5rem;
 }
 @media (max-width: 950px) {
-    .footer__item {
-      flex-direction: column-reverse;
-      gap: 5rem;
-    }
+  .footer__item {
+    flex-direction: column-reverse;
+    gap: 5rem;
   }
+}
 .footer__item::before {
   content: url(./images/bg-footer-top-desktop.svg);
   position: absolute;
   bottom: 100%;
   left: 0%;
 }
-@media (max-width:650px){
-    .footer__item::before{
-        left: -75%;
-    }
-}
 .footer__item > .leftpart > div {
   display: flex;
   margin-block: 1rem;
   gap: 1rem;
 }
-.footer__item > .leftpart > div>img{
+.footer__item > .leftpart > div > img {
   height: 1.5rem;
 }
 .footer__item > .leftpart > p {
   margin-block: 1.5rem;
+  font-size: 85%;
+}
+@media (max-width: 375px) {
+  .footer__item::before {
+    content: url(./images/bg-footer-top-mobile.svg);
+  }
 }
 .footer__item > .rightpart {
   width: 60%;
@@ -46,20 +47,15 @@ footer {
 .footer__item > .rightpart > h3 {
   font-size: 150%;
 }
-@media (max-width: 950px) {
-    .footer__item > .rightpart > h3 {
-      font-size: 120%;
-      gap: 5rem;
-    }
-  }
 .footer__item > .rightpart > P {
   margin-block: 2rem;
+  font-size: 85%;
 }
-.footer__item > .rightpart > div{
-    display: flex;
-    width: 130%;
-    gap: 1rem;
-    flex-wrap:wrap;
+.footer__item > .rightpart > div {
+  display: flex;
+  width: 130%;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .footer__item > .rightpart > div > button {
   border: none;
@@ -79,4 +75,13 @@ footer {
   padding-inline: 1.5rem;
   border-radius: 0.5rem;
   border: none;
+}
+@media (max-width: 950px) {
+  .footer__item > .rightpart > h3 {
+    font-size: 120%;
+    gap: 5rem;
+  }
+  .footer__item > .rightpart {
+    width: 100%;
+  }
 }
