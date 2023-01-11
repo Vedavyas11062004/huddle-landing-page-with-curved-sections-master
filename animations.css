@@ -6,3 +6,8 @@
 .show{
     opacity: 1;
 }
+
+#error{
+  margin-top: .5rem;
+  color: rgb(218, 68, 68);
+}

@@ -51,13 +51,13 @@ footer {
   margin-block: 2rem;
   font-size: 85%;
 }
-.footer__item > .rightpart > div {
+.footer__item > .rightpart >form>div {
   display: flex;
   width: 130%;
   gap: 1rem;
   flex-wrap: wrap;
 }
-.footer__item > .rightpart > div > button {
+.footer__item > .rightpart >form>div>button {
   border: none;
   padding-inline: 1.5rem;
   padding-block: 0.5rem;
@@ -66,11 +66,11 @@ footer {
   color: whitesmoke;
   font-weight: bold;
 }
-.footer__item > .rightpart > div > button:hover {
+.footer__item > .rightpart >form>div > button:hover {
   cursor: pointer;
   background-color: var(--clr-lighpink);
 }
-.footer__item > .rightpart > div > input {
+.footer__item > .rightpart >form>div > input {
   padding-block: 0.5rem;
   padding-inline: 1.5rem;
   border-radius: 0.5rem;

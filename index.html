@@ -23,10 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./animations.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./templateStyle.css">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./templateStyle.css" />
+    <link rel="stylesheet" href="./footer.css" />
 
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
@@ -135,13 +135,16 @@
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </p>
-          <div>
-            <input type="email" />
-            <button type="submit">Subscribe</button>
-          </div>
+          <form>
+            <div>
+              <input id="email" type="email" />
+              <button id="submit" type="submit">Subscribe</button>
+            </div>
+            <div id="error"></div>
+          </form>
         </div>
       </section>
     </footer>
   </body>
-  <script src="./app.js"></script>
+  <script defer src="./app.js"></script>
 </html>
